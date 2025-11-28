@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cot_report"
+version = "0.1.0"
+description = "COT Report Analysis"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas",
+    "cot_reports",
+    "matplotlib",
+    "pyarrow",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
